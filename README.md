@@ -1,5 +1,11 @@
 # Webpack-ts(typescript)-Template
 
+## 🛠 Config
+``` shell
+  npm install --global typescript
+```
+
+
 ## 🚀 Command 
 ---
 ``` shell

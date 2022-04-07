@@ -1,9 +1,11 @@
+const path = require('path');
+
 const port = process.env.PORT || 3000;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development', 
-  entry: './src/index.js', 
+  entry: './src/index.ts', 
   output: {
     filename: 'bundle.[hash].js'
   },
@@ -39,6 +41,7 @@ module.exports = {
           },
         ],
       },
+      { test: /\.ts?$/, loader: "ts-loader" }
     ],
   },
   plugins: [
