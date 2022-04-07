@@ -50,7 +50,12 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.es6', '.js'],
-    modules: ['node_modules']
+    modules: ['node_modules'],
+    alias: {
+      '@': path.resolve(__dirname, './src'),  // ./ 경로를 @으로 설정
+      'Images': path.resolve(__dirname, './images'),
+      extensions: ['.ts', '.tsx', '.js', '.json'],
+    },
   },
   devServer: {
     host: 'localhost',
